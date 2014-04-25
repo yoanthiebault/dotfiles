@@ -67,3 +67,4 @@ export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/st
 # Configure locale
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US:en"
+export LANG="en_US.UTF-8"
