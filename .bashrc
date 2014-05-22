@@ -220,6 +220,9 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+# 2.8) miscellaneous                                                                                                                       
+alias ubi="cd ~/ubismart/"
+
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
