@@ -28,6 +28,7 @@
 (setq show-trailing-whitespace t)
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
+(global-linum-mode t)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
