@@ -222,6 +222,7 @@ fi
 
 # 2.8) miscellaneous                                                                                                                       
 alias ubi="cd ~/ubismart/"
+alias muxkill="tmux kill-session -t"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
