@@ -29,6 +29,8 @@
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
 (global-linum-mode t)
+(setq show-paren-delay 0)
+(show-paren-mode 1)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -46,7 +48,7 @@
  '(linum ((t (:foreground "black" :weight bold))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
- '(show-paren-match ((((class color) (background light)) (:background "black"))))
+ '(show-paren-match ((t (:background "red"))))
  '(vertical-border ((t nil)))
 )
 
