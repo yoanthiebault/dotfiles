@@ -222,7 +222,9 @@ if [ -s ~/.nvm/nvm.sh ]; then
 fi
 
 # 2.8) miscellaneous                                                                                                                       
-alias ubi="cd ~/ubismart/"
+ubiFn() { cd ~/ubismart/"$1"; }
+alias ubi=ubiFn
+alias core="ubi ubi/core"
 alias muxkill="tmux kill-session -t"
 
 ## ------------------------------
