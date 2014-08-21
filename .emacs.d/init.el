@@ -70,6 +70,13 @@
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
 
+;; ---------------------
+;; -- Package manager --
+;; ---------------------
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+
 ;; ---------------------------
 ;; -- JS Mode configuration --
 ;; ---------------------------
@@ -93,3 +100,6 @@
 
 ;; web-beautify for js, css, html
 (load "web-beautify.el")
+
+;; flycheck mode permanently
+(add-hook 'after-init-hook #'global-flycheck-mode)
