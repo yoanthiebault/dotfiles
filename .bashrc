@@ -226,6 +226,7 @@ ubiFn() { cd ~/ubismart/"$1"; }
 alias ubi=ubiFn
 alias core="ubi ubi/core"
 alias muxkill="tmux kill-session -t"
+alias oms="cd ~/greeny-oms/"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
@@ -233,3 +234,4 @@ alias muxkill="tmux kill-session -t"
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+source /usr/local/bin/virtualenvwrapper.sh

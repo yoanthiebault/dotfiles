@@ -22,7 +22,10 @@ windows:
   - bash:
   - emacs: emacs -nw
   - sails:
-  - brain: cd ~/ubiBrain/ubismart-platform-lab/
+  - brain.py:
+    - cd ~/reasoning/
+    - workon reasoning
+  - brain.osgi: cd ~/ubiBrain/ubismart-platform-lab/
 #  - editor:
 #      layout: main-vertical
 #      panes:
