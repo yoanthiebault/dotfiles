@@ -10,5 +10,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# ALIASES
+# text editor commands
+alias em='emacs -nw'     # No X11 windows
+alias eqq='emacs -nw -Q' # No config and no X11
+export EDITOR='emacs -nw'
+export VISUAL='emacs -nw' 
+
+# dev
+alias ubi="cd ~/ubismart/"
+alias core="cd ~/ubismart/ubi/core"
+alias muxkill="tmux kill-session -t"
+alias oms="cd ~/greeny-oms/"
 
