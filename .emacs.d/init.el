@@ -32,25 +32,15 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 
+;; -----------------
+;; -- Color Theme --
+;; -----------------
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit autoface-default :strike-through nil :underline nil :slant normal :weight normal :height 120 :width normal :family "monaco"))))
- '(column-marker-1 ((t (:background "red"))))
- '(diff-added ((t (:foreground "cyan"))))
- '(flymake-errline ((((class color) (background light)) (:background "Red"))))
- '(font-lock-comment-face ((t (:foreground "black"))))
- '(fundamental-mode-default ((t (:inherit default))))
- '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
- '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
- '(linum ((t (:foreground "black" :weight bold))))
- '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
- '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
- '(show-paren-match ((t (:background "red"))))
- '(vertical-border ((t nil)))
-)
+ '(font-lock-comment-face ((t (:foreground "black")))))
 
 ;; ------------
 ;; -- Macros --
@@ -93,7 +83,6 @@
 ;; -------------------
 ;; -- Auto-complete --
 ;; -------------------
-(add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
@@ -112,3 +101,10 @@
 
 ;; flycheck mode permanently
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("12dd37432bb454355047c967db886769a6c60e638839405dad603176e2da366b" default))))
+
