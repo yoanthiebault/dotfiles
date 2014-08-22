@@ -18,8 +18,4 @@ export EDITOR='emacs -nw'
 export VISUAL='emacs -nw' 
 
 # dev
-alias ubi="cd ~/ubismart/"
-alias core="cd ~/ubismart/ubi/core"
 alias muxkill="tmux kill-session -t"
-alias oms="cd ~/greeny-oms/"
-

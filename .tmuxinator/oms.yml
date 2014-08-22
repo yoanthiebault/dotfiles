@@ -19,7 +19,7 @@ root: ~/greeny-oms/
 # tmux_command: byobu
 
 windows:
-  - bash:
+  - shell:
   - emacs: emacs -nw
   - sails:
   - ubi: cd ~/ubismart/

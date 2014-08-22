@@ -19,7 +19,7 @@ root: ~/ubismart/
 # tmux_command: byobu
 
 windows:
-  - bash:
+  - shell:
   - emacs: emacs -nw
   - sails:
   - brain.py:
