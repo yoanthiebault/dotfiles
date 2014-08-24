@@ -12,6 +12,8 @@
 (require 'ansi-color)
 (require 'recentf)
 (require 'linum)
+(require 'linum-relative)
+(global-set-key (kbd "C-c t") 'linum-relative-toggle)
 (require 'smooth-scrolling)
 (require 'whitespace)
 (require 'dired-x)
