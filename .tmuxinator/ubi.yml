@@ -1,6 +1,6 @@
-# ~/.tmuxinator/sails.yml
+# ~/.tmuxinator/ubi.yml
 
-name: sails
+name: ubi
 root: ~/ubismart/
 
 # Optional tmux socket
@@ -22,10 +22,6 @@ windows:
   - shell:
   - emacs: emacs -nw
   - sails:
-  - brain.py:
-    - cd ~/reasoning/
-    - workon reasoning
-  - brain.osgi: cd ~/ubiBrain/ubismart-platform-lab/
 #  - editor:
 #      layout: main-vertical
 #      panes:
